@@ -38,15 +38,25 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [x] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+  This week we two of the express components we learned about were router and built-in middleware. Express router allows you to break up the code into smaller files with each containing a sub-router based off of a common url. Express also has support for middleware and we learned about some of the built in middleware that ships with express. The main one we used was express.json() which allows for json present in the body of an HTTP request to be parsed as javascript.
 
-- [ ] Describe a Resource?
+- [x] Describe Middleware?
 
-- [ ] What can the API return to help clients know if a request was successful?
+  Middleware is a set of functions that run on a server between recieving a request and sending a response (middleware does sometimes send its own responses). express.json() is an example of middleware as are things like loggers which keep track of recieved requests. You can also write custom middleware to do more application specific things such as validating a certian type of resource.
 
-- [ ] How can we partition our application into sub-applications?
+- [x] Describe a Resource?
+
+  A resource is something that is stored remotely on a server which is meant to be accessed by clients over the internet. The point of APIs are usually to provide access to theses resources to clients. On an email client some examples of needed resources could be, users, contacts, and emails.
+
+- [x] What can the API return to help clients know if a request was successful?
+
+  RESTful APIs should return a status call with every response which indicates what the server did with the recieved request. The 200 range of codes means the request was succesful. The 400 range indicates that there was something wrong with the request. Anything in the 500 range means that the server ran into some error.
+
+- [x] How can we partition our application into sub-applications?
+
+  One way to split up the application is through the use of routers. Routers allow for the breaking-up of routes into files based on common url patterns.
 
 ## Minimum Viable Product
 
