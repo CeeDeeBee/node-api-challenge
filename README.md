@@ -44,15 +44,15 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [x] Describe Middleware?
 
-  Middleware is a set of functions that run on a server between recieving a request and sending a response (middleware does sometimes send its own responses). express.json() is an example of middleware as are things like loggers which keep track of recieved requests. You can also write custom middleware to do more application specific things such as validating a certian type of resource.
+  Middleware is a set of functions that run on a server between receiving a request and sending a response (middleware does sometimes send its own responses). express.json() is an example of middleware as are things like loggers which keep track of received requests. You can also write custom middleware to do more application specific things such as validating a certian type of resource.
 
 - [x] Describe a Resource?
 
-  A resource is something that is stored remotely on a server which is meant to be accessed by clients over the internet. The point of APIs are usually to provide access to theses resources to clients. On an email client some examples of needed resources could be, users, contacts, and emails.
+  A resource is something that is stored remotely on a server which is meant to be accessed by clients over the internet. The point of APIs are usually to provide access to theses resources to clients. On an email client some examples of needed resources could be users, contacts, and emails.
 
 - [x] What can the API return to help clients know if a request was successful?
 
-  RESTful APIs should return a status call with every response which indicates what the server did with the recieved request. The 200 range of codes means the request was succesful. The 400 range indicates that there was something wrong with the request. Anything in the 500 range means that the server ran into some error.
+  RESTful APIs should return a status code with every response which indicates what the server did with the received request. The 200 range of codes mean the request was succesful. The 400 range indicates that there was something wrong with the request. Anything in the 500 range means that the server ran into some error.
 
 - [x] How can we partition our application into sub-applications?
 
